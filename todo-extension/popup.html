@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>To-do List</title>
+    <style>
+    body {
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    font-family: 'Shantell Sans';
+    font-size: 14px;
+    color:black;
+    font-weight: 500;
+    background-image: url('icons/background1.png');
+    background-size: cover;
+  }
+  
+  h1 {
+    margin-top: -3%;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 14px;
+    font-family: 'Shantell Sans';
+  }
+  input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid #000000;
+  }
+  
+  button[type="submit"] {
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF6103;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Shantell Sans'
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: bottom;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  li {
+    padding: 5px;
+    border-bottom: 1px solid #FF6103;
+    font-size: 14px;
+  }
+  .remove-button {
+  background-image: url('path/to/cross.png');
+  background-size: 100% 100%;
+  margin-left: 4%;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <form>
+      <input type="text" id="new-item" placeholder="Add new item">
+      <button type="submit" id="add-button">Add</button>
+    </form>
+    <ul id="todo-list" ></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
