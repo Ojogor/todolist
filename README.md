@@ -1,8 +1,15 @@
 # todolist
 **Persitent Todo list Chrome Extension**
 
+
 Working demonstration:
 https://github.com/Ojogor/todolist/assets/98194481/4a836732-fb42-45c7-bc57-2ebae4b173cc
+
+
+
+
+
+
 
 
 Chrome Extension - Todo List Manager
